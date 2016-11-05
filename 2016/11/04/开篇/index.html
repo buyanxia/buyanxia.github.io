@@ -4,23 +4,22 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>开篇 | Buyanxia&#39; blog</title>
+    <title>London | Buyanxia&#39; blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Buyanxia">
     
 
     
-    <meta name="description" content="噼里啪啦升级中 | 加油！加油！">
-<meta property="og:type" content="article">
-<meta property="og:title" content="开篇">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="London">
 <meta property="og:url" content="http://buyanxia.github.io.com/2016/11/04/开篇/index.html">
 <meta property="og:site_name" content="Buyanxia' blog">
-<meta property="og:description" content="噼里啪啦升级中 | 加油！加油！">
-<meta property="og:updated_time" content="2016-11-04T15:26:17.518Z">
+<meta property="og:image" content="http://www.bz55.com/uploads/allimg/150305/140-150305112A2.jpg">
+<meta property="og:updated_time" content="2016-11-05T06:12:07.657Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开篇">
-<meta name="twitter:description" content="噼里啪啦升级中 | 加油！加油！">
+<meta name="twitter:title" content="London">
+<meta name="twitter:image" content="http://www.bz55.com/uploads/allimg/150305/140-150305112A2.jpg">
 
     
     <link rel="alternative" href="/atom.xml" title="Buyanxia&#39; blog" type="application/atom+xml">
@@ -78,20 +77,20 @@
 </div>
     </header>
     <div id="container">
-      <div id="main" class="开篇" itemscope itemprop="blogPost">
+      <div id="main" class="post" itemscope itemprop="blogPost">
   
 	<article itemprop="articleBody"> 
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/11/04/开篇/" title="开篇" itemprop="url">开篇</a>
+      <a href="/2016/11/04/开篇/" title="London" itemprop="url">London</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Buyanxia" target="_blank" itemprop="author">Buyanxia</a>
 		
   <p class="article-time">
-    <time datetime="2016-11-04T15:06:19.000Z" itemprop="datePublished"> 发表于 2016-11-04</time>
+    <time datetime="2016-11-04T15:06:19.603Z" itemprop="datePublished"> 发表于 2016-11-04</time>
     
   </p>
 </header>
@@ -104,7 +103,8 @@
 		
 		</div>
 		
-		  
+		<p><img src="http://www.bz55.com/uploads/allimg/150305/140-150305112A2.jpg" alt="伦敦街景"></p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -116,7 +116,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://buyanxia.github.io.com/2016/11/04/开篇/" data-title="开篇 | Buyanxia&#39; blog" data-tsina="5108589930" class="share clearfix">
+	  <div data-url="http://buyanxia.github.io.com/2016/11/04/开篇/" data-title="London | Buyanxia&#39; blog" data-tsina="5108589930" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -145,6 +145,13 @@
 </div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ 
+ 
+  </div>
+
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
@@ -155,6 +162,15 @@
   
 
   
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+		
+		</ul>
+</div>
+
 
   <div class="linkslist">
   <p class="asidetitle">友情链接</p>
@@ -315,6 +331,55 @@ $(document).ready(function(){
 </script>
 
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
 
 
 
@@ -384,4 +449,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
